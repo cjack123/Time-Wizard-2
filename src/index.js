@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom"
 import './index.css';
 import { TimeWizard } from './components/TimeWizard';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Router>
     <TimeWizard />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

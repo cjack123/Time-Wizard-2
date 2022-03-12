@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-// import { Home } from "./Home"
+import { Home } from "../components/Home"
 import  { Login } from '../components/auth/Login'
 import { Register } from '../components/auth/Register'
 import { ProjectCard } from './project/ProjectCard';
 
-export const ApplicationViews = () => {
+export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
     const PrivateRoute = ({ children }) => {
         return isAuthenticated ? children : <Navigate to="/login" />;
@@ -16,24 +16,21 @@ export const ApplicationViews = () => {
       setIsAuthenticated(sessionStorage.getItem("TimeWizard_users") !== null)
     }
 
-    const PrivateRoute = ({ children }) => {
-        return isAuthenticated ? children : <Navigate to="/login" />;
-    }
-  
-    const setAuthUser = (user) => {
-      sessionStorage.setItem("kennel_customer", JSON.stringify(user))
-      setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
-    }
 
     return (
         <>
             <Routes>
+
+                {/* This will render the home page when http://localhost:3000/ */}
+                <Route path="/" element={<Home />} />
+
+
                 {/* Renders auth and login */}
                 <Route exact path="/login" element={<Login setAuthUser={setAuthUser} />} />
                 <Route exact path="/register" element={<Register />} />
 
 
-                <Route path="/projects" element={<ProjectCard />} />
+                <Route path="/projects" element={<PrivateRoute><ProjectCard /></PrivateRoute>} />
             </Routes>
         </>
     )

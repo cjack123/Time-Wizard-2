@@ -7,7 +7,7 @@ export const getProjectById = (projectId) => {
 }
 
 export const getAllProjects = () => {
-    return fetch (`${remoteURL}/projects?`)
+    return fetch (`${remoteURL}/projects`)
     .then(res => res.json())
 }
 
