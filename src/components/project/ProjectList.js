@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'
 import { ProjectCard } from './ProjectCard.js';
 import { getAllProjects, getProjectById, deleteProject } from '../../modules/ProjectManager.js';
-import { useNavigate } from 'react-router-dom'
+
 
 export const ProjectList = () => {
     //The initial state is an empty array
@@ -30,13 +31,13 @@ export const ProjectList = () => {
     //.map() loops the projects api array displaying project cards' list
     return (
         <>
-            <section className="section-content">
+            {/* <section className="section-content">
                 <button type="button"
                     className="btn"
                     onClick={() => {navigate("/projects/create")}}>
-                    Add New Evevnt
+                    Add New Project
                     </button>
-            </section>
+            </section> */}
             <div className="container-cards">
                 {projects.map(project =>
                     <ProjectCard 
