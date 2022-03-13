@@ -24,8 +24,8 @@ export const ProjectCard = ({ project, handleDeleteEvent }) => {
 
     return (
         <div className="card">
-            <h1>{project.title}</h1>
-            <h2>Due Date: {project.dueDate}</h2>
+            {/* <h1>{project.title}</h1>
+            <h2>Due Date: {project.dueDate}</h2> */}
             <h2>Days Left: {} </h2>
             <img />
             <button>View Project</button>

@@ -3,7 +3,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import { Home } from "../components/Home"
 import  { Login } from '../components/auth/Login'
 import { Register } from '../components/auth/Register'
-import { ProjectCard } from './project/ProjectCard';
+import { ProjectList } from './project/ProjectList';
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
@@ -30,7 +30,7 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
                 <Route exact path="/register" element={<Register />} />
 
 
-                <Route path="/projects" element={<PrivateRoute><ProjectCard /></PrivateRoute>} />
+                <Route path="/projects" element={<PrivateRoute> <ProjectList /></PrivateRoute>} />
             </Routes>
         </>
     )
