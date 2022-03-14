@@ -19,9 +19,13 @@ export const Navbar = ({ clearUser, isAuthenticated }) => {
                         <Link className="navbar__link" to="/"> Home </Link>
                         </li>
 
+
                 <li className="nav-item">
                     <Link className="nav-link" to="/projects">Projects</Link>
                     </li>
+
+
+
 
                 {isAuthenticated
                 ? <li className="navbar__item">

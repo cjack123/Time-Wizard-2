@@ -4,6 +4,7 @@ import { Home } from "../components/Home"
 import  { Login } from '../components/auth/Login'
 import { Register } from '../components/auth/Register'
 import { ProjectList } from './project/ProjectList';
+import { ProjectTask } from './project/ProjectTask'
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
@@ -30,7 +31,8 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
                 <Route exact path="/register" element={<Register />} />
 
 
-                <Route path="/projects" element={<PrivateRoute> <ProjectList /></PrivateRoute>} />
+                <Route exact path="/projects" element={<PrivateRoute> <ProjectList /></PrivateRoute>} />
+                
             </Routes>
         </>
     )
