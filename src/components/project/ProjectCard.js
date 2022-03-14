@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import "./Project.css"
 
-export const ProjectCard = ({ projects, handleDeleteEvent }) => {
+export const ProjectCard = ({ project, handleDeleteEvent }) => {
 
     // const countDown = (day1, day2) => {
     
@@ -20,12 +20,12 @@ export const ProjectCard = ({ projects, handleDeleteEvent }) => {
 
     //     // Convert back to days and return
     //     return Math.round(difference_ms/deadline)
-    // }
+    // } 
 
     return (
         <div className="card">
-            <h1>{projects.title}</h1>
-            <h2>Due Date: {projects.dueDate}</h2>
+            <h1>{project.title}</h1>
+            <h2>Due Date: {project.dueDate}</h2>
             <h2>Days Left: {} </h2>
             <img />
             <button>View Project</button>
