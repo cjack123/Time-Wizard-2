@@ -42,7 +42,7 @@ export const ProjectList = () => {
                 {projects.map(project =>
                     <ProjectCard 
                     key={project.id}
-                    projectt={project}
+                    project={project}
                     handleDeleteProject={handleDeleteProject} />)}
             </div>
         </>

@@ -5,16 +5,16 @@ import "./TimeWizard.css"
 
 export const TimeWizard = () => {
 
-    const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
+    const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("TimeWizard_user") !== null)
 
     const setAuthUser = (user) => {
-        sessionStorage.setItem("kennel_customer", JSON.stringify(user))
-        setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+        sessionStorage.setItem("timeWizard_user", JSON.stringify(user))
+        setIsAuthenticated(sessionStorage.getItem("TimeWizard_user") !== null)
     }
 
     const clearUser = () => {
         sessionStorage.clear();
-        setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+        setIsAuthenticated(sessionStorage.getItem("TimeWizard_user") !== null)
     }
     
     return (
