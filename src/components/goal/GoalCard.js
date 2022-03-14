@@ -4,12 +4,28 @@ import "./GoalCard.css"
 
 export const GoalCard = ({ goal, handleDeleteGoal }) => {
     return (
+      <>
       <div className="card">
-            {/* <p>Title: {goal.title}</p>
-            <p>Description: {goal.description}</p> */}
-            <Link to={`/goals/${goal.id}/edit`}>
-              <button>Edit</button>
-              </Link>
-        </div>
+
+        <p>Collapsible Goal Set:</p>
+        <button class="collapsible" value="">Goal Title</button>
+
+       <section id="middle">
+              <div class="field">
+                <h3 id="cent">Topics</h3>
+                    ${steps.map(
+                      step => {
+                          return `<input name="faveTopic" value="" type="checkbox">
+                          <label>step.title</label>`
+                      }).join("")}
+                </div>
+            </section>
+
+
+      </div>
+      </>
+
     );
 }
+
+
