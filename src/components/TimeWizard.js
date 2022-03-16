@@ -8,7 +8,7 @@ export const TimeWizard = () => {
     const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("TimeWizard_user") !== null)
 
     const setAuthUser = (user) => {
-        sessionStorage.setItem("timeWizard_user", JSON.stringify(user))
+        sessionStorage.setItem("TimeWizard_user", JSON.stringify(user))
         setIsAuthenticated(sessionStorage.getItem("TimeWizard_user") !== null)
     }
 

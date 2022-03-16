@@ -37,7 +37,7 @@ export const ProjectTask = () => {
                     <p>Step 1</p>
 
 
-                    {/* When expanded, steps will display with checkout*/}
+                    {/* When expanded, steps will show with checkout*/}
 
                     <div>
                         <input> type="checkbox" id="scales" name="scales"
@@ -54,3 +54,23 @@ export const ProjectTask = () => {
         </>
     )
 }
+
+<section id="goals">
+            <button class="collapsible" onclick="coll()" value="">Goal ${}</button>
+                <div class="content">
+                    <p>Step 1</p>
+
+
+                    {/* When expanded, steps will show with checkout*/}
+
+                    <div>
+                        <input> type="checkbox" id="scales" name="scales"
+                                checked</input>
+                        <label for="scales">Step 1</label>
+                        </div>
+                    <div>
+                        <input type="checkbox" id="horns" name="horns"></input>
+                        <label for="horns">Step 2</label>
+                        </div>
+                </div>
+                </section>
