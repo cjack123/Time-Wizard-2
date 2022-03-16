@@ -4,7 +4,7 @@ import { Home } from "../components/Home"
 import  { Login } from '../components/auth/Login'
 import { Register } from '../components/auth/Register'
 import { ProjectList } from './project/ProjectList';
-import { ProjectTask } from './project/ProjectTask'
+import { ProjectForm } from './project/ProjectForm'
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
@@ -32,6 +32,7 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
 
                 <Route exact path="/projects" element={<PrivateRoute> <ProjectList /></PrivateRoute>} />
+                <Route path="/projects/create" element={<ProjectForm />} /> {/*Renders a form for projects. */}
                 
             </Routes>
         </>

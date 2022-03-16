@@ -1,135 +1,139 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Test Girl",
-            "email": "test@test.com",
-            "password": "Nss123!"
-            
-        },
-        {
-            "id": 2,
-            "name": "Penny Proud",
-            "email": "penny@mail.com",
-            "password": "Nss456!"
-            
-        },
-        {
-            "id": 3,
-            "name": "Kim Possible",
-            "email": "kim@mail.com",
-            "password": "Nss789!"
-            
-        }
-    ],
-    "projects": [
-        {
-            "id": 1,
-            "userId": 3,
-            "title": "Clean Studio Appartment",
-            "description": "My parents are coming to visit.",
-            "dueDate": "April 11" 
-        },
-        {
-            "id": 2,
-            "userId": 1,
-            "title": "Bake a Cake",
-            "description": "I want to make birthday dinner for my kid.",
-            "dueDate": "April 13" 
-        },
-        {
-            "id": 3,
-            "userId": 2,
-            "title": "Workout",
-            "description": "I want to train",
-            "dueDate": "April 14" 
-        }
-
-    ],
-    "goals": [
-        {
-            "id": 1,
-            "user": 3,
-            "projectId": 1,
-            "title": "Bathroom",
-            "description": "It looks scary."
-        },
-        {
-            "id": 2,
-            "user": 3,
-            "projectId": 1,
-            "title": "Kitchen",
-            "description": "I smells bad."
-        },
-        {
-            "id": 2,
-            "user": 3,
-            "projectId": 1,
-            "title": "Common Area",
-            "description": "Having a clean living area makes the space feel bigger."
-        }
-    ],
-    "steps": [
-        {
-            "id": 1,
-            "goalId": 1,
-            "title": "Clean Tub and Toilet"
-        },
-        {
-            "id": 2,
-            "goalId": 1,
-            "title": "Clean counter and sweep"
-        },
-        {
-            "id": 3,
-            "goalId": 1,
-            "title": "Clean mirror and take out trash"
-        },
-        {
-            "id": 4,
-            "goalId": 2,
-            "title": "Clean out the fridge and Freeezer"
-        },
-        {
-            "id": 5,
-            "goalId": 2,
-            "title": "Wash dishes"
-        },
-        {
-            "id": 6,
-            "goalId": 2,
-            "title": "Santize counters and stove"
-        },
-        {
-            "id": 7,
-            "goalId": 2,
-            "title": "Sweep and Mop"
-        },
-        {
-            "id": 8,
-            "goalId": 2,
-            "title": "Take out Trash"
-        },
-        {
-            "id": 9,
-            "goalId": 3,
-            "title": "Laundry"
-        },
-        {
-            "id": 9,
-            "goalId": 3,
-            "title": "Laundry"
-        },
-        {
-            "id": 10,
-            "goalId": 3,
-            "title": "Vaccum"
-        },
-        {
-            "id": 10,
-            "goalId": 3,
-            "title": "dusk"
-        }
-    ],
-    "projectTasks": {}
+  "users": [
+    {
+      "id": 1,
+      "name": "Test Girl",
+      "email": "test@test.com",
+      "password": "Nss123!"
+    },
+    {
+      "id": 2,
+      "name": "Penny Proud",
+      "email": "penny@mail.com",
+      "password": "Nss456!"
+    },
+    {
+      "id": 3,
+      "name": "Kim Possible",
+      "email": "kim@mail.com",
+      "password": "Nss789!"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "userId": 3,
+      "title": "Clean Studio Appartment",
+      "description": "My parents are coming to visit.",
+      "dueDate": "April 11"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Bake a Cake",
+      "description": "I want to make birthday dinner for my kid.",
+      "dueDate": "April 13"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Workout",
+      "description": "I want to train",
+      "dueDate": "April 14"
+    },
+    {
+      "userId": 1,
+      "title": "test",
+      "description": "test",
+      "dueDate": "2022-03-15",
+      "dateTime": "3/15/2022, 8:04:58 PM",
+      "id": 4
+    }
+  ],
+  "goals": [
+    {
+      "id": 1,
+      "user": 3,
+      "projectId": 1,
+      "title": "Bathroom",
+      "description": "It looks scary."
+    },
+    {
+      "id": 2,
+      "user": 3,
+      "projectId": 1,
+      "title": "Kitchen",
+      "description": "I smells bad."
+    },
+    {
+      "id": 2,
+      "user": 3,
+      "projectId": 1,
+      "title": "Common Area",
+      "description": "Having a clean living area makes the space feel bigger."
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "goalId": 1,
+      "title": "Clean Tub and Toilet"
+    },
+    {
+      "id": 2,
+      "goalId": 1,
+      "title": "Clean counter and sweep"
+    },
+    {
+      "id": 3,
+      "goalId": 1,
+      "title": "Clean mirror and take out trash"
+    },
+    {
+      "id": 4,
+      "goalId": 2,
+      "title": "Clean out the fridge and Freeezer"
+    },
+    {
+      "id": 5,
+      "goalId": 2,
+      "title": "Wash dishes"
+    },
+    {
+      "id": 6,
+      "goalId": 2,
+      "title": "Santize counters and stove"
+    },
+    {
+      "id": 7,
+      "goalId": 2,
+      "title": "Sweep and Mop"
+    },
+    {
+      "id": 8,
+      "goalId": 2,
+      "title": "Take out Trash"
+    },
+    {
+      "id": 9,
+      "goalId": 3,
+      "title": "Laundry"
+    },
+    {
+      "id": 9,
+      "goalId": 3,
+      "title": "Laundry"
+    },
+    {
+      "id": 10,
+      "goalId": 3,
+      "title": "Vaccum"
+    },
+    {
+      "id": 10,
+      "goalId": 3,
+      "title": "dusk"
+    }
+  ],
+  "projectTasks": {}
 }
