@@ -44,9 +44,9 @@
     {
       "userId": 1,
       "title": "test",
-      "description": "test",
-      "dueDate": "2022-03-15",
-      "dateTime": "3/15/2022, 8:04:58 PM",
+      "description": "This is a test.",
+      "dueDate": "2022-03-16",
+      "dateTime": "3/16/2022, 7:46:39 PM",
       "id": 4
     }
   ],
@@ -134,6 +134,6 @@
       "goalId": 3,
       "title": "dusk"
     }
-  ],
-  "projectTasks": {}
+
+  ]
 }

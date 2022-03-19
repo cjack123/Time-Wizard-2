@@ -5,6 +5,8 @@ import  { Login } from '../components/auth/Login'
 import { Register } from '../components/auth/Register'
 import { ProjectList } from './project/ProjectList';
 import { ProjectForm } from './project/ProjectForm'
+import { ProjectTask } from './project/ProjectTask'
+// import { GoalList } from './goal/GoalList';
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
@@ -33,6 +35,10 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
                 <Route exact path="/projects" element={<PrivateRoute> <ProjectList /></PrivateRoute>} />
                 <Route path="/projects/create" element={<ProjectForm />} /> {/*Renders a form for projects. */}
+                <Route path="/projects/:projectId/task" element={<ProjectTask />} />
+
+                {/* <Route exact path="/goals" element={<PrivateRoute> <GoalList /></PrivateRoute>} /> */}
+
                 
             </Routes>
         </>

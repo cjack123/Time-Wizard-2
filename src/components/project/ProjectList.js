@@ -9,7 +9,7 @@ export const ProjectList = () => {
     const [projects, setProjects] = useState([]);
     let navigate = useNavigate();
 
-    const getProjectById = () => {
+    const getProjects = () => {
         //grabs project and return from the API,
         // use setProjects to update state
         return getAllProjects().then(projectsFromAPI => {
@@ -19,7 +19,7 @@ export const ProjectList = () => {
 
     //got the customers from the API on the components's first render
     useEffect(() => {
-        getProjectById();
+        getProjects();
     }, []);
 
     //this is the delete customer function
@@ -43,7 +43,7 @@ export const ProjectList = () => {
                     <ProjectCard 
                     key={project.id}
                     project={project}
-                     />)}
+                    handleDeleteProject={handleDeleteProject} />)}
             </div>
         </>
     )
@@ -52,5 +52,3 @@ export const ProjectList = () => {
 
 }
 
-
-// handleDeleteProject={handleDeleteProject}
