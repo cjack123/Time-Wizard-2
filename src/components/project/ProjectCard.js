@@ -1,8 +1,11 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Project.css"
+// import {getAllProjects} from "../../ProjectManager"
 
-export const ProjectCard = ({ project, handleDeleteEvent }) => {
+
+
+export const ProjectCard = ({ project, handleDeleteProject }) => {
 
     // const countDown = (day1, day2) => {
     
@@ -22,13 +25,16 @@ export const ProjectCard = ({ project, handleDeleteEvent }) => {
     //     return Math.round(difference_ms/deadline)
     // } 
 
+
+
     return (
         <div className="card">
             <h1>{project.title}</h1>
             <h2>Due Date: {project.dueDate}</h2>
             <h2>Days Left: {} </h2>
-            <img />
-            <button>View Project</button>
+            <p>Reason: {project.description}</p>
+            <Link to={`/projects/${project.id}/task`}><button>View Project Tasks</button></Link>
+            <button type="button" onClick={() => handleDeleteProject(project.id)}>Delete Project</button>
         </div>
     )
 }
