@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import {useParams, useNavigate} from "react-router-dom"
-import { getProjectById, deleteProject } from "../../modules/ProjectManager";
+// import { getProjectById, deleteProject } from "../../modules/ProjectManager";
+import { getGoalById, deleteGoal } from "../../modules/GoalManager";
+import { GoalList } from "../goal/GoalList"
+import { GoalForm } from "../goal/GoalForm"
 
 //Add ProjectTaskManager
 
@@ -13,8 +16,16 @@ import { getProjectById, deleteProject } from "../../modules/ProjectManager";
 
 export const ProjectTask = () => {
     
-    const [animal, setAnimal] = useState({ Title: "", Description: "", });
+    const [animal, setGoal] = useState({ Title: "", Description: "", });
     const [isLoading, setIsLoading] = useState(true);
 
+
+    return (
+
+        <>
+        <GoalForm />
+        <GoalList />
+        </>
+    )
 
 }

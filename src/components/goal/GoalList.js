@@ -3,6 +3,10 @@ import { GoalCard } from './GoalCard.js';
 import { getAllGoals, getGoalById, deleteGoal } from '../../modules/GoalManager.js';
 import { useNavigate } from 'react-router-dom'
 
+//goals need user info
+//sort goals within projects
+
+
 export const GoalList = () => {
     //The initial state is an empty array
     const [goals, setGoals] = useState([]);
@@ -27,16 +31,19 @@ export const GoalList = () => {
         .then(() => getAllGoals().then(setGoals));
     };
 
+
+    
+
     //Now we use .map() to "loop over" the goals array to show a list of goal cards
     return (
         <>
-            {/* <section className="section-content">
+            <section className="section-content">
                 <button type="button"
                     className="btn"
                     onClick={() => {navigate("/goals/create")}}>
                     Add New goal
-                    </button>
-            </section> */}
+                    </button>x
+            </section>
             <div className="container-cards">
                 {goals.map(goal =>
                     <GoalCard 

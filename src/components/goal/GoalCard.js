@@ -9,19 +9,12 @@ export const GoalCard = ({ goal, project }) => {
   return (
     <div className="card">
       <div className="card-content">
-      <form>
-        <label for="fname" >Step :{goal.title}</label>
-        <input type="chechbox" id="fname" name="fname"></input>
-        </form>
+        <h1>Test</h1>
+        <p>Step :{goal.title}</p>
         </div>
       </div>
       
   );
-
-
-
-
-
 }
 
 

@@ -7,31 +7,33 @@ import "./Project.css"
 
 export const ProjectCard = ({ project, handleDeleteProject }) => {
 
-    // const countDown = (day1, day2) => {
+    const countDown = (project) => {
     
-    //     var today = Date.now();
+        var dueDate = project.dueDate
+        var today = Date.now();
     
-    //     // The number of milliseconds in one day
-    //     var deadline = 1000 * 60 * 60 * 24
+        // The number of milliseconds in one day
+        var deadline = 1000 * 60 * 60 * 24
 
-    //     // Convert both dates to milliseconds
-    //     var date1_ms = date1.getTime()
-    //     var date2_ms = date2.getTime()
+        // Convert both dates to milliseconds
+        var dueDate = dueDate.getTime()
+        var today = today.getTime()
 
-    //     // Calculate the difference in milliseconds
-    //     var difference_ms = Math.abs(date1_ms - date2_ms)
+        // Calculate the difference in milliseconds
+        var difference_ms = Math.abs(dueDate - today)
 
-    //     // Convert back to days and return
-    //     return Math.round(difference_ms/deadline)
-    // } 
+        // Convert back to days and return
+        return Math.round(difference_ms/deadline)
+    } 
 
 
 
+    
     return (
         <div className="card">
             <h1>{project.title}</h1>
             <h2>Due Date: {project.dueDate}</h2>
-            <h2>Days Left: {} </h2>
+            <h2>Days Left: {countDown()} Days </h2>
             <p>Reason: {project.description}</p>
             <Link to={`/projects/${project.id}/task`}><button>View Project Tasks</button></Link>
             <button type="button" onClick={() => handleDeleteProject(project.id)}>Delete Project</button>
