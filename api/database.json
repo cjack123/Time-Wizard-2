@@ -56,6 +56,14 @@
       "dueDate": "2022-03-28",
       "dateTime": "3/21/2022, 6:01:15 PM",
       "id": 5
+    },
+    {
+      "userId": 1,
+      "title": "",
+      "description": "",
+      "dueDate": "2022-03-21",
+      "dateTime": "3/21/2022, 6:54:09 PM",
+      "id": 6
     }
   ],
   "goals": [
@@ -84,83 +92,41 @@
       "title": "Cake batter"
     },
     {
-      "title": "Test",
-      "projectId": 2,
+      "userId": 1,
+      "title": "Daron",
+      "projectId": 5,
+      "dueDate": "2022-03-27",
+      "estTime": "9",
       "id": 5
     },
     {
-      "title": "Test",
-      "projectId": 3,
+      "userId": 1,
+      "title": "Hello",
+      "projectId": 5,
+      "dueDate": "2022-03-27",
+      "estTime": "11",
       "id": 6
     },
     {
-      "title": "",
-      "projectId": 2,
+      "userId": 0,
+      "title": "test",
+      "projectId": 5,
+      "dueDate": "2022-03-27",
+      "estTime": "1",
       "id": 7
     },
     {
-      "title": "TestGoal1",
+      "userId": 0,
+      "title": "",
       "projectId": 5,
       "id": 8
     },
     {
-      "title": "test3",
+      "userId": 1,
+      "title": "",
       "projectId": 5,
+      "dateTime": "3/21/2022, 9:53:51 PM",
       "id": 9
-    }
-  ],
-  "steps": [
-    {
-      "id": 1,
-      "goalId": 1,
-      "step1": "Clean Tub and Toilet",
-      "step2": "Clean counter and sweep",
-      "step3": "Clean mirror and take out trash"
-    },
-    {
-      "id": 4,
-      "goalId": 2,
-      "title": "Clean out the fridge and Freeezer"
-    },
-    {
-      "id": 5,
-      "goalId": 2,
-      "title": "Wash dishes"
-    },
-    {
-      "id": 6,
-      "goalId": 2,
-      "title": "Santize counters and stove"
-    },
-    {
-      "id": 7,
-      "goalId": 2,
-      "title": "Sweep and Mop"
-    },
-    {
-      "id": 8,
-      "goalId": 2,
-      "title": "Take out Trash"
-    },
-    {
-      "id": 9,
-      "goalId": 3,
-      "title": "Laundry"
-    },
-    {
-      "id": 9,
-      "goalId": 3,
-      "title": "Laundry"
-    },
-    {
-      "id": 10,
-      "goalId": 3,
-      "title": "Vaccum"
-    },
-    {
-      "id": 10,
-      "goalId": 3,
-      "title": "dusk"
     }
   ]
 }

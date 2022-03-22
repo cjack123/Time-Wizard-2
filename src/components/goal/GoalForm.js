@@ -9,6 +9,7 @@ export const GoalForm = () => {
 	// Define the initial state of the form inputs with useState()
 
     const [goal, setGoal] = useState({
+		userId: 0,
 		title: "",
 		projectId: 0
 	});
@@ -43,12 +44,16 @@ export const GoalForm = () => {
 		event.preventDefault() //Prevents the browser from submitting the form
 
 		const projectId = goal.projectId
+		const user = JSON.parse(sessionStorage.getItem("TimeWizard_users"))
+		const newGoal = { ...goal }
+		newGoal.userId = user.id
+		newGoal.dateTime = new Date().toLocaleString();
 
 		if ( projectId === 0 ) {
 			window.alert("Please select a project")
 		} else {
 			
-			addGoal(goal)
+			addGoal(newGoal)
 				.then(() => navigate("/goals"))
 		}
 	}
@@ -63,6 +68,23 @@ export const GoalForm = () => {
                     <input type="text" id="title" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Goal title" value={goal.title} />
                 </div>
                 </fieldset>
+
+			<fieldset>
+				<div className="form-group">
+					<label htmlFor="date">Minutes to complete goal:</label>
+					<input type="date" id="dueDate" onChange={handleControlledInputChange} required autoFocus className="form-control" value={goal.dueDate} />
+					</div>
+					</fieldset>
+
+
+			<fieldset>
+					<div className="form-group">
+						<label htmlFor="number">Minutes to complete goal:</label>
+						<input type="number" id="estTime" onChange={handleControlledInputChange} required autoFocus className="form-control" value={goal.estTime} />
+						</div>
+						</fieldset>
+
+
             <fieldset>
 				<div className="form-group">
 					<label htmlFor="project">Assign to project: </label>

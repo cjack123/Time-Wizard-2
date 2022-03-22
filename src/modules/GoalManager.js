@@ -2,7 +2,7 @@ const remoteURL = "http://localhost:8088"
 
 export const getGoalById = (goalId) => {
   //be sure your goals have good data and related to a location and goal
-  return fetch(`${remoteURL}/goals/${goalId}`)
+  return fetch(`${remoteURL}/goals/${goalId}?_expand=user&_expand=project`)
   .then(res => res.json())
 }
 
@@ -16,7 +16,17 @@ export const deleteGoal = (id) => {
       method: "DELETE"
     }).then(result => result.json())
 }
-  
+
+// export const updateGoal = (editedGoal) => {
+//   return fetch(`${remoteURL}/goals/${editedGoal.id}`, {
+//     method: "PUT",
+//     headers: {
+//       "Content-Type": "application/json"
+//     },
+//     body: JSON.stringify(editedGoal)
+//   }).then(data => data.json());
+// }
+
 export const addGoal = (newGoal) => {
     return fetch(`${remoteURL}/goals`, {
         method: "POST",
@@ -26,13 +36,3 @@ export const addGoal = (newGoal) => {
         body: JSON.stringify(newGoal)
     }).then(response => response.json())
 }
-
-export const updateGoal = (editedGoal) => {
-    return fetch(`${remoteURL}/goals/${editedGoal.id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(editedGoal)
-    }).then(data => data.json());
-  }
