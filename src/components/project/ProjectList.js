@@ -28,6 +28,7 @@ export const ProjectList = () => {
         .then(() => getAllProjects().then(setProjects));
     };
 
+
     //.map() loops the projects api array displaying project cards' list
     return (
         <>

@@ -23,7 +23,6 @@ export const ProjectTask = () => {
     return (
 
         <>
-        <GoalForm />
         <GoalList />
         </>
     )

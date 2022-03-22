@@ -12,7 +12,7 @@ export const GoalList = () => {
     const [goals, setGoals] = useState([]);
     let navigate = useNavigate();
 
-    const getGoalById = () => {
+    const getGoals = () => {
         //After the date comes back from the API,
         // we use the setGoals funstion to update state
         return getAllGoals().then(goalsFromAPI => {
@@ -22,7 +22,7 @@ export const GoalList = () => {
 
     //got the goals from the API on the components's first render
     useEffect(() => {
-        getGoalById();
+        getGoals();
     }, []);
 
     //this is the delete customer function
@@ -42,7 +42,7 @@ export const GoalList = () => {
                     className="btn"
                     onClick={() => {navigate("/goals/create")}}>
                     Add New goal
-                    </button>x
+                    </button>
             </section>
             <div className="container-cards">
                 {goals.map(goal =>
