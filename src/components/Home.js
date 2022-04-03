@@ -1,6 +1,8 @@
 import { ProjectList } from "./project/ProjectList"
+import { Timer } from "./Timer.js"
 import { Test } from "./test"
 // import { Stopwatch } from "./Stopwatch.js"
+
 
 
 //make a fetch call for getMyProjects in the projects page using user id sessionStorage 
@@ -15,14 +17,10 @@ export const Home = () => {
 
     return (
 
-
         <>
-        
-        <h1>Test Git</h1>
-        {/* <Stopwatch /> */}
-        
+        <h1>IDK Girl </h1>
+        <Timer />
         </>
-        
     )
 
 }

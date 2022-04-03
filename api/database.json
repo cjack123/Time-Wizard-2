@@ -25,14 +25,22 @@
       "userId": 1,
       "title": "Clean Studio Appartment",
       "description": "My parents are coming to visit.",
-      "dueDate": "April 11"
+      "dueDate": "2022-04-11"
     },
     {
       "id": 2,
       "userId": 2,
       "title": "Bake a Cake",
       "description": "I want to make birthday dinner for my kid.",
-      "dueDate": "April 13"
+      "dueDate": "2022-04-13"
+    },
+    {
+      "userId": 1,
+      "title": "Practice",
+      "description": "",
+      "dueDate": "2022-04-08",
+      "dateTime": "4/3/2022, 1:09:07 PM",
+      "id": 3
     },
     {
       "userId": 1,
@@ -69,11 +77,12 @@
       "title": "Common Area"
     },
     {
-      "userId": 1,
-      "title": "Daron",
-      "projectId": 5,
-      "dueDate": "2022-03-27",
-      "estTime": "9",
+      "userId": 3,
+      "title": "Under Project 3",
+      "projectId": 1,
+      "dueDate": "2022-04-03",
+      "estTime": "3",
+      "dateTime": "4/3/2022, 9:29:47 AM",
       "id": 5
     },
     {
@@ -92,6 +101,7 @@
       "estTime": "11",
       "dateTime": "3/24/2022, 8:45:08 PM",
       "id": 7
+
     }
   ]
 }

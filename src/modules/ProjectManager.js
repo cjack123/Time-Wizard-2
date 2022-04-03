@@ -1,8 +1,9 @@
 const remoteURL = "http://localhost:8088"
 
-export const getProjectById = (projectId) => {
-    //retrieves project properties json object
-    return fetch(`${remoteURL}/projects/${projectId}?_expand=user`)
+
+export const getProjectUserById = (userId) => {
+    //be sure your goals have good data and related to a project and goal
+    return fetch(`${remoteURL}/projects?userId=${userId}`)
     .then(res => res.json())
 }
 

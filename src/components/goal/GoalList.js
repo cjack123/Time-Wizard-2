@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { GoalCard } from './GoalCard.js';
-import { getAllGoals, getProjectGoalById, deleteGoal } from '../../modules/GoalManager.js';
+import { getAllGoals, getGoalById, deleteGoal, getProjectGoalById } from '../../modules/GoalManager.js';
+
 import { useNavigate, useParams } from 'react-router-dom'
 
 //goals need user info
