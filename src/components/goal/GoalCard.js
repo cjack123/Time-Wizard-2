@@ -10,9 +10,9 @@ export const GoalCard = ({ goal, handleDeleteGoal }) => {
     <div className="card">
       <div className="card-content">
         <h1>Test</h1>
-        <p>Goal :{goal.title}</p>
-        <p>Due Date: {goal.dueDate}</p>
-        <p> {goal.estTime} Minutes</p>
+          <p>Goal :{goal.title}</p>
+          <p>Due Date: {goal.dueDate}</p>
+          <p> {goal.estTime} Minutes</p>
         <button type="button" onClick={() => handleDeleteGoal(goal.id)}>Delete Goal</button>
         </div>
       </div>
