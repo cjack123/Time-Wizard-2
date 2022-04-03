@@ -4,11 +4,13 @@ import { ProjectCard } from './ProjectCard.js';
 import { getAllProjects, deleteProject, getProjectUserById } from '../../modules/ProjectManager.js';
 
 
+
 export const ProjectList = () => {
     //The initial state is an empty array
     const [projects, setProjects] = useState([]);
     let navigate = useNavigate();
     const userId = JSON.parse(sessionStorage.getItem("TimeWizard_users")).id
+
 
     const getProjects = () => {
         //After the date comes back from the API,
@@ -54,3 +56,14 @@ export const ProjectList = () => {
 
 }
 
+
+
+// const getProjects = () => {
+//     //grabs project and return from the API,
+//     // use setProjects to update state
+//     const user = JSON.parse(sessionStorage.getItem("TimeWizard_users"))
+//     const userId = sessionStorage.setItem("TimeWizard_user", JSON.stringify(user))
+//     return getProjectUserById(userId).then(projectsFromAPI => {
+//         setProjects(projectsFromAPI)
+//     });
+// }

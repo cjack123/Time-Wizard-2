@@ -7,6 +7,12 @@ export const getProjectUserById = (userId) => {
     .then(res => res.json())
 }
 
+export const getProjectUserById = (userId) => {
+    //be sure your goals have good data and related to a project and goal
+    return fetch(`${remoteURL}/projects?userId=${userId}`)
+    .then(res => res.json())
+}
+
 export const getAllProjects = () => {
     return fetch (`${remoteURL}/projects`)
     .then(res => res.json())

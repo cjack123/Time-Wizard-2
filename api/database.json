@@ -22,14 +22,14 @@
   "projects": [
     {
       "id": 1,
-      "userId": 3,
+      "userId": 1,
       "title": "Clean Studio Appartment",
       "description": "My parents are coming to visit.",
       "dueDate": "2022-04-11"
     },
     {
       "id": 2,
-      "userId": 1,
+      "userId": 2,
       "title": "Bake a Cake",
       "description": "I want to make birthday dinner for my kid.",
       "dueDate": "2022-04-13"
@@ -41,32 +41,40 @@
       "dueDate": "2022-04-08",
       "dateTime": "4/3/2022, 1:09:07 PM",
       "id": 3
+    },
+    {
+      "userId": 1,
+      "title": "Test2",
+      "description": "Stuff",
+      "dueDate": "2022-03-28",
+      "dateTime": "3/21/2022, 6:01:15 PM",
+      "id": 5
     }
   ],
   "goals": [
     {
       "id": 1,
-      "user": 3,
+      "userId": 1,
       "projectId": 1,
       "title": "Bathroom"
     },
     {
       "id": 2,
-      "user": 3,
+      "userId": 1,
       "projectId": 1,
       "title": "Kitchen"
     },
     {
       "id": 3,
-      "user": 3,
+      "userId": 1,
       "projectId": 1,
       "title": "Common Area"
     },
     {
       "id": 4,
-      "user": 2,
+      "userId": 2,
       "projectId": 2,
-      "title": "Cake batter"
+      "title": "Common Area"
     },
     {
       "userId": 3,
@@ -76,6 +84,24 @@
       "estTime": "3",
       "dateTime": "4/3/2022, 9:29:47 AM",
       "id": 5
+    },
+    {
+      "userId": 1,
+      "title": "Hello",
+      "projectId": 5,
+      "dueDate": "2022-03-27",
+      "estTime": "11",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "title": "Test",
+      "projectId": 1,
+      "dueDate": "2022-03-24",
+      "estTime": "11",
+      "dateTime": "3/24/2022, 8:45:08 PM",
+      "id": 7
+
     }
   ]
 }
