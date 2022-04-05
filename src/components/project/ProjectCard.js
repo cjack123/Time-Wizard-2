@@ -23,6 +23,7 @@ export const ProjectCard = ({ project, handleDeleteProject }) => {
             key={project.id}
             project={project}/>
             <Link to={`/projects/${project.id}/task`}><button>View Project Tasks</button></Link>
+            
             <button type="button" onClick={() => handleDeleteProject(project.id)}>Delete Project</button>
         </div>
 

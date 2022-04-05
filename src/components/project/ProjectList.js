@@ -33,9 +33,9 @@ export const ProjectList = () => {
 
     
 
-    var checked = JSON.parse(localStorage.getItem('completed'));
+    var checked = JSON.parse(localStorage.getItem('isCompleted'));
     if (checked === true) {
-        document.getElementById("completed").checked = true;
+        document.getElementById("isCompleted").checked = true;
     } 
 
 

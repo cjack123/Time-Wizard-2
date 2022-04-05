@@ -26,7 +26,7 @@
       "title": "Clean Studio Appartment",
       "description": "My parents are coming to visit.",
       "dueDate": "2022-04-11",
-      "iscompleted": false
+      "isCompleted": false
     },
     {
       "id": 2,
@@ -34,7 +34,7 @@
       "title": "Bake a Cake",
       "description": "I want to make birthday dinner for my kid.",
       "dueDate": "2022-04-13",
-      "iscompleted": false
+      "isCompleted": false
     },
     {
       "userId": 3,
@@ -43,7 +43,7 @@
       "dueDate": "2022-04-08",
       "dateTime": "4/3/2022, 1:09:07 PM",
       "id": 3,
-      "iscompleted": false
+      "isCompleted": false
     },
     {
       "userId": 1,
@@ -51,6 +51,7 @@
       "description": "Test",
       "dueDate": "2022-04-07",
       "dateTime": "4/4/2022, 7:21:25 PM",
+      "isCompleted": false,
       "id": 4
     }
   ],
@@ -60,35 +61,36 @@
       "userId": 1,
       "projectId": 1,
       "title": "Bathroom",
-      "iscompleted": false
+      "isCompleted": false
     },
     {
       "id": 2,
       "userId": 1,
       "projectId": 1,
       "title": "Kitchen",
-      "iscompleted": false
+      "isCompleted": false
     },
     {
       "id": 3,
       "userId": 1,
       "projectId": 1,
       "title": "Common Area",
-      "iscompleted": false
+      "isCompleted": false
     },
     {
       "id": 4,
       "userId": 2,
       "projectId": 2,
       "title": "Store",
-      "iscompleted": false
+      "isCompleted": false
     }
   ],
   "notes": [
     {
       "id": 1,
       "goalId": 1,
-      "written": "This is a note. Hello World."
+      "title": "This a title.",
+      "message": "This is a note. Hello World."
     }
   ]
 }

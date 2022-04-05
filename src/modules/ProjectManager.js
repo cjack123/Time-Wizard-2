@@ -45,6 +45,16 @@ export const addProject = (newProject) => {
     }).then(response => response.json())
 }
 
+export const completedProject = (isCompleted) => {
+  return fetch (`${remoteURL}/projects?_${isCompleted}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(isCompleted)
+  }).then(data => data.json());
+}
+
 export const getRandomId = (userId) => {
     return fetch(`${remoteURL}/projects?userId=${userId}`)
       .then(result => result.json())
