@@ -1,7 +1,7 @@
 import { ProjectList } from "./project/ProjectList"
 import { Timer } from "./Timer.js"
 import { Test } from "./test"
-// import { Stopwatch } from "./Stopwatch.js"
+import { HomeQueue } from "./HomeQueue"
 
 
 
@@ -19,6 +19,7 @@ export const Home = () => {
 
         <>
         <h1>IDK Girl </h1>
+        <HomeQueue />
         <Timer />
         </>
     )

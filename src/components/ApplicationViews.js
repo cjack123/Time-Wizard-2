@@ -6,8 +6,10 @@ import { Register } from '../components/auth/Register'
 import { ProjectList } from './project/ProjectList';
 import { ProjectForm } from './project/ProjectForm'
 import { ProjectTask } from './project/ProjectTask'
+import { ProjectCompleted } from './project/ProjectCompleted'
 import { GoalList } from './goal/GoalList';
 import { GoalForm } from './goal/GoalForm';
+ 
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
@@ -37,6 +39,7 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
                 <Route exact path="/projects" element={<PrivateRoute> <ProjectList /></PrivateRoute>} />
                 <Route path="/projects/create" element={<ProjectForm />} /> {/*Renders a form for projects. */}
                 <Route exact path="/projects/:projectId/task" element={<ProjectTask />} />
+                <Route exact path="/projects/:projectId/completed" element={<ProjectCompleted />} />
 
                 <Route exact path="/goals" element={<GoalList />} />
                 <Route exact path="/goals" element={<GoalForm />} />
