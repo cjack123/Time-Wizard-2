@@ -16,13 +16,14 @@ export const HomeQueue = () => {
   
     return (
       <>
-
+        <div className="header">
         <h1>Start a Project!</h1>
+          </div>
+
+        <div className="queueCard">
         <button onClick={refreshQueueProject}>Reload &#x27f3;</button>
-        {
-          queueId && <Queue projectId={queueId} />
-        }
-  
+          {queueId && <Queue projectId={queueId} />}
+          </div>
       </>
     );
   };

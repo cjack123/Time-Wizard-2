@@ -27,6 +27,7 @@ export const ProjectForm = () => {
         title: "",
         description: "",
         dueDate: "",
+		isCompleted: false
         //maybe add topics? Personal, professional, school, chores, cooking, hobbies, et
 		
 

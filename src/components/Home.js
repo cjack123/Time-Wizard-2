@@ -1,4 +1,4 @@
-import { ProjectList } from "./project/ProjectList"
+import { useNavigate } from 'react-router-dom'
 import { Timer } from "./Timer.js"
 import { Test } from "./test"
 import { HomeQueue } from "./HomeQueue"
@@ -11,14 +11,29 @@ import { HomeQueue } from "./HomeQueue"
 
 
 export const Home = () => {
-
+    let navigate = useNavigate();
 
 
 
     return (
 
         <>
-        <h1>IDK Girl </h1>
+        <div className="buttons-home">
+            <section className="buttonCreateProject-home">
+                <button type="button"
+                    className="btn"
+                    onClick={() => {navigate("/projects/create")}}>
+                    Add New Project
+                    </button>
+                    </section>   
+            <section className="buttonCreateGoal-home">
+                <button type="button"
+                    className="btn"
+                    onClick={() => {navigate("/goals/create")}}>
+                    Add New goal
+                    </button>        
+                </section>
+            </div>
         <HomeQueue />
         <Timer />
         </>
