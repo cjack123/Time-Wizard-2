@@ -31,6 +31,13 @@ export const ProjectList = () => {
         .then(() => getProjectUserById(userId).then(setProjects));
     };
 
+    
+
+    var checked = JSON.parse(localStorage.getItem('completed'));
+    if (checked === true) {
+        document.getElementById("completed").checked = true;
+    } 
+
 
     //.map() loops the projects api array displaying project cards' list
     return (

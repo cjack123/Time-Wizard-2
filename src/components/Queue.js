@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { getProjectById } from "../project/ProjectManager";
+import { getProjectUserById, getProjectById } from "../modules/ProjectManager";
+import { ProjectCard } from "./project/ProjectCard";
 
 export const Queue = ({projectId}) => {
   const [project, setProject] = useState({});
+  const userId = JSON.parse(sessionStorage.getItem("TimeWizard_users")).id
+  
 
   useEffect(() => {
     getProjectById(projectId).then(project => {
@@ -10,13 +13,13 @@ export const Queue = ({projectId}) => {
     });
   }, [projectId]);
 
+  
+
   return (
-    <div className="project-spotlight">
-      {/* <img src={require('./dog.svg')} alt="My Dog" /> */}
-      <div>
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
-      </div>
-    </div>
+    <>
+    <h1>{project.title}</h1>
+    <h2>Due Date: {project.dueDate}</h2>
+    </>
   );
 };
+

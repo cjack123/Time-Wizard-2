@@ -29,7 +29,6 @@ export const ProjectTask = () => {
 
     return (
         <>
-        <h1>This page should render the goals associated with the project.</h1>
         <GoalList />
         </>
     )

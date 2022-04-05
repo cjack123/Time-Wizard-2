@@ -36,7 +36,10 @@ export const GoalList = () => {
     };
 
 
-    
+    var checked = JSON.parse(localStorage.getItem('completed'));
+    if (checked === true) {
+        document.getElementById("completed").checked = true;
+    } 
 
     //Now we use .map() to "loop over" the goals array to show a list of goal cards
     return (

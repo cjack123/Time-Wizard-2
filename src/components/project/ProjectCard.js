@@ -10,6 +10,11 @@ export const ProjectCard = ({ project, handleDeleteProject }) => {
 
     
     return (
+        <>
+        <div className="checkBox">
+            <input id="completed" value="isChecked" type="checkbox" />
+            <label>Complete</label>
+        </div>
         <div className="card">
             <h1>{project.title}</h1>
             <h2>Due Date: {project.dueDate}</h2>
@@ -20,5 +25,7 @@ export const ProjectCard = ({ project, handleDeleteProject }) => {
             <Link to={`/projects/${project.id}/task`}><button>View Project Tasks</button></Link>
             <button type="button" onClick={() => handleDeleteProject(project.id)}>Delete Project</button>
         </div>
+
+        </>
     )
 }
